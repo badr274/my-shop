@@ -1,0 +1,32 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0;
+}
+.mySwiper {
+  padding-bottom: 24px !important;
+}
+.mySwiper .swiper-wrapper {
+  padding-bottom: 10px !important;
+}
+
+.mySwiper .swiper-pagination {
+  bottom: 0px !important;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background: #4f46e5 !important;
+  opacity: 0.3;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
