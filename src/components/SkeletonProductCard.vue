@@ -19,11 +19,10 @@
 </template>
 
 <style scoped>
-/* Lightweight shimmer skeleton */
 .skeleton {
   position: relative;
   overflow: hidden;
-  background-color: rgb(229 231 235); /* gray-200 */
+  background-color: rgb(229 231 235);
 }
 .skeleton::after {
   content: "";

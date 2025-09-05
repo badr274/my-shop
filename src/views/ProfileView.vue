@@ -3,10 +3,8 @@
     class="min-h-screen bg-gray-50 flex items-center justify-center py-10 px-4"
   >
     <div class="max-w-sm w-full bg-white shadow-lg rounded-2xl overflow-hidden">
-      <!-- Cover -->
       <div class="h-28 bg-gradient-to-r from-indigo-500 to-purple-600"></div>
 
-      <!-- Avatar -->
       <div class="relative -mt-14 flex justify-center">
         <img
           src="https://i.pravatar.cc/150?img=12"
@@ -15,7 +13,6 @@
         />
       </div>
 
-      <!-- Info -->
       <div class="px-6 py-6 text-center">
         <h2 class="text-xl font-bold text-gray-800">
           {{ user?.name || "Guest User" }}

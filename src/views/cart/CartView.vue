@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col justify-center items-center mt-8 w-full">
-    <!-- Title -->
     <h1 class="text-3xl font-semibold mb-7 text-gray-800">
       Cart Items: [{{ cartData?.numOfCartItems || 0 }}]
     </h1>

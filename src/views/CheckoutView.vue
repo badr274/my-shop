@@ -37,7 +37,6 @@
         <ErrorMessage as="small" name="details" class="text-red-500 text-sm" />
       </div>
 
-      <!-- Order Summary -->
       <div
         class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex justify-between items-center"
       >
@@ -47,7 +46,6 @@
         </span>
       </div>
 
-      <!-- Action Buttons -->
       <div class="space-y-3">
         <!-- Cash Order -->
         <Btn

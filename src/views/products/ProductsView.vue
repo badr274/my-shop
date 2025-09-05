@@ -150,7 +150,6 @@ const handleFilter = (value: ISelectedFilter) => {
   currentPage.value = 1;
 };
 
-// --- Query ---
 const { data, error, isLoading, isFetching } = useQuery({
   queryKey: ["products", currentPage, sortValue, filterValue],
   queryFn: async () => {

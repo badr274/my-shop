@@ -1,7 +1,6 @@
 <template>
   <TransitionRoot appear :show="isOpen" as="template">
     <Dialog as="div" @close="closeModal" class="relative z-10">
-      <!-- Overlay مع Blur -->
       <TransitionChild
         as="template"
         enter="duration-300 ease-out"

@@ -14,7 +14,6 @@
 
     <!-- Product Details -->
     <div v-else-if="data" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Images -->
       <div>
         <img
           :src="data?.data?.imageCover"
@@ -23,7 +22,6 @@
           class="rounded-2xl shadow-md max-h-[400px] object-contain w-full"
         />
 
-        <!-- Thumbnails Carousel -->
         <Swiper
           class="mt-6 pb-8 mySwiper"
           :modules="[Pagination, Autoplay]"
@@ -54,7 +52,6 @@
         </h1>
         <p class="text-gray-600 mb-4">{{ data?.data?.description }}</p>
 
-        <!-- Price & Stock -->
         <div class="flex flex-row items items-center justify-between">
           <div class="flex flex-col items-center gap-5 mb-6">
             <span class="text-2xl font-semibold text-indigo-600">
@@ -92,7 +89,6 @@
           </p>
         </div>
 
-        <!-- CTA -->
         <Btn
           class="px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition"
         >
