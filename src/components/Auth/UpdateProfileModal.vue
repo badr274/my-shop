@@ -86,7 +86,7 @@
 </template>
 
 <script setup lang="ts">
-import type { IAuthResponse, IEditProdilePayload } from "@/apis/authApi";
+import type { IAuthResponse, IEditProfilePayload } from "@/apis/authApi";
 import {
   TransitionRoot,
   TransitionChild,
@@ -109,6 +109,6 @@ defineProps<{
 }>();
 
 const emits = defineEmits<{
-  (e: "submitEditProfile", value: IEditProdilePayload): void;
+  (e: "submitEditProfile", value: IEditProfilePayload): void;
 }>();
 </script>

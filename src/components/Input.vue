@@ -23,7 +23,7 @@
 import type { IInput } from "@/interfaces";
 import { ErrorMessage, Field } from "vee-validate";
 
-const props = defineProps<{
+defineProps<{
   inputs: IInput[];
 }>();
 </script>

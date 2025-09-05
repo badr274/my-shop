@@ -37,7 +37,9 @@
                 Forgot Password
               </DialogTitle>
               <Form
-                @submit="(values) => emits('submitForgotPass', values)"
+                @submit="
+                  (values:any) => emits('submitForgotPass', { email: values.email })
+                "
                 :validation-schema="forgotPassSchema"
                 :initial-values="initialValues"
                 class="mt-2 space-y-4"

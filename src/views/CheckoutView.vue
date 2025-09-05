@@ -4,9 +4,13 @@
     <Form
       v-slot="{ values, validate }"
       @submit="
-        (values: IShippingAddress) =>
+        (values: any) =>
           handleCashOrderSubmit({
-            shippingAddress: values,
+            shippingAddress: {
+                    details: values.details,
+                    city: values.city,
+                    phone: values.phone,
+                  },
             cartId: cartData?.cartId as string,
           })
       "
@@ -60,7 +64,11 @@
               const { valid } = await validate();
               if (valid) {
                 handleOnlinePayment({
-                  shippingAddress: values,
+                  shippingAddress: {
+                    details: values.details,
+                    city: values.city,
+                    phone: values.phone,
+                  },
                   cartId: cartData?.cartId as string,
                 });
               }

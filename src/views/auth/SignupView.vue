@@ -3,7 +3,7 @@
     <div class="w-full max-w-md bg-white shadow-md rounded-xl p-6">
       <h2 class="text-center mb-6 text-2xl font-bold text-gray-800">Signup</h2>
       <Form
-        @submit="onSubmit"
+        @submit="(values:any)=>onSubmit({name:values.name, email:values.email,password:values.password,rePassword:values.rePassword,phone:values.phone })"
         :validation-schema="signupSchema"
         :initial-values="{} as ISignupPayload"
         class="space-y-4"
