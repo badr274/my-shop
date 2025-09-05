@@ -83,6 +83,8 @@ export async function createCheckoutSessionApi(
 ): Promise<ICheckoutSessionResponse> {
   return (await handleCreateOrder(
     payload,
-    `/orders/checkout-session/${payload.cartId}?url=http://localhost:5173`
+    `/orders/checkout-session/${payload.cartId}?url=${
+      import.meta.env.VITE_REDIRECT_CHECKOUT_URL
+    }`
   )) as ICheckoutSessionResponse;
 }
